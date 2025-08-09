@@ -3,9 +3,10 @@
 # PURPOSE: Run a remote bash script to ensure that the machine patched and rebooted, using AWS SSM
 # FEATURES: All you need is the region, instance ID, and the change number.
 # Requirements: Bash, AWS Cli, AWS Account Credentials
-# Comment: Ths script performs borrows from the Doubletake as seen in https://github.com/m-quintero/Linux_Patcher, but is for a single action. If you are needing to run across multiple instances, see the doubletake script.
+# Comment: but_did_it_patch.sh borrows from the Doubletake script as seen in https://github.com/m-quintero/Linux_Patcher, but is for a single action. If you are needing to run across multiple instances at a time, see the doubletake script.
 
 #!/bin/bash
+
 set -euo pipefail
 
 usage() {
